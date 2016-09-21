@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="CDA.xsl"?><!--
+	Title: US_Realm_Header_Template --><ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ../../../WebstormProjects/camara/resources/schemas/CDA/infrastructure/cda/CDA_SDTC.xsd">
+   <!--
+********************************************************
+  CDA Header
+********************************************************
+	-->
+   <realmCode code="US"/>
+   <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+   <!-- US General Header Template -->
+   <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+   <!-- *** Note:  The next templateId, code and title will differ depending on what type of document is being sent. *** -->
+   <!-- conforms to the document specific requirements  -->
+   <templateId root="2.16.840.1.113883.10.20.22.1.10"/>
+   <id extension="TT988" root="2.16.840.1.113883.19.5.99999.1"/>
+   <code code="11490-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Discharge summarization note"/>
+   <title>Community Health and Hospitals: Discharge Summary (UD)</title>
+   <effectiveTime value="201209161918-0400"/>
+   <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+   <languageCode code="en-US"/>
+   <setId extension="sTT988" root="2.16.840.1.113883.19.5.99999.19"/>
+   <versionNumber value="1"/>
+   <recordTarget>
+      <patientRole>
+         <id extension="998991" root="2.16.840.1.113883.19.5.99999.2"/>
+         <!-- Fake ID using HL7 example OID. -->
+         <id extension="111-00-2330" root="2.16.840.1.113883.4.1"/>
+         <!-- Fake Social Security Number using the actual SSN OID. -->
+         <addr use="HP">
+            <!-- HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119 -->
+            <streetAddressLine>1357 Amber Drive</streetAddressLine>
+            <city>Beaverton</city>
+            <state>OR</state>
+            <postalCode>97867</postalCode>
+            <country>US</country>
+            <!-- US is "United States" from ISO 3166-1 Country Codes: 1.0.3166.1 -->
+         </addr>
+         <telecom use="HP" value="tel:(816)276-6909"/>
+         <!-- HP is "primary home" from HL7 AddressUse 2.16.840.1.113883.5.1119 -->
+         <patient>
+            <name use="L">
+               <!-- L is "Legal" from HL7 EntityNameUse 2.16.840.1.113883.5.45 -->
+               <given>Isabella</given>
+               <given>Isa</given>
+               <!-- CL is "Call me" from HL7 EntityNamePartQualifier 2.16.840.1.113883.5.43 -->
+               <family>Jones</family>
+            </name>
+            <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" displayName="Female"/>
+            <birthTime value="20050501"/>
+            <maritalStatusCode code="M" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatusCode" displayName="Married"/>
+            <religiousAffiliationCode code="1013" codeSystem="2.16.840.1.113883.5.1076" codeSystemName="HL7 Religious Affiliation" displayName="Christian (non-Catholic, non-specific)"/>
+            <raceCode code="1966-1" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" displayName="Aleut"/>
+            <ethnicGroupCode code="2186-5" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" displayName="Not Hispanic or Latino"/>
+            <guardian>
+               <code code="GRPRN" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role code" displayName="Grandparent"/>
+               <addr use="HP">
+                  <!-- HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119 -->
+                  <streetAddressLine>1357 Amber Drive</streetAddressLine>
+                  <city>Beaverton</city>
+                  <state>OR</state>
+                  <postalCode>97867</postalCode>
+                  <country>US</country>
+                  <!-- US is "United States" from ISO 3166-1 Country Codes: 1.0.3166.1 -->
+               </addr>
+               <telecom use="HP" value="tel:(816)276-6909"/>
+               <guardianPerson>
+                  <name>
+                     <given>Ralph</given>
+                     <family>Jones</family>
+                  </name>
+               </guardianPerson>
+            </guardian>
+            <birthplace>
+               <place>
+                  <addr>
+                     <city>Beaverton</city>
+                     <state>OR</state>
+                     <postalCode>97867</postalCode>
+                     <country>US</country>
+                  </addr>
+               </place>
+            </birthplace>
+            <languageCommunication>
+               <languageCode code="en"/>
+               <modeCode code="ESP" codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode" displayName="Expressed spoken"/>
+               <preferenceInd value="true"/>
+            </languageCommunication>
+         </patient>
+         <providerOrganization>
+            <id root="2.16.840.1.113883.19.5.9999.1393"/>
+            <name>Community Health and Hospitals</name>
+            <telecom use="WP" value="tel: 555-555-5000"/>
+            <addr>
+               <streetAddressLine>1001 Village Avenue</streetAddressLine>
+               <city>Portland</city>
+               <state>OR</state>
+               <postalCode>99123</postalCode>
+               <country>US</country>
+            </addr>
+         </providerOrganization>
+      </patientRole>
+   </recordTarget>
+   <author>
+      <time value="20050329224411+0500"/>
+      <assignedAuthor>
+         <id extension="99999999" root="2.16.840.1.113883.4.6"/>
+         <code code="200000000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians"/>
+         <addr>
+            <streetAddressLine>1002 Healthcare Drive </streetAddressLine>
+            <city>Portland</city>
+            <state>OR</state>
+            <postalCode>99123</postalCode>
+            <country>US</country>
+         </addr>
+         <telecom use="WP" value="tel:555-555-1002"/>
+         <assignedPerson>
+            <name>
+               <given>Henry</given>
+               <family>Seven</family>
+            </name>
+         </assignedPerson>
+      </assignedAuthor>
+   </author>
+   <dataEnterer>
+      <assignedEntity>
+         <id extension="999999943252" root="2.16.840.1.113883.4.6"/>
+         <addr>
+            <streetAddressLine>1001 Village Avenue</streetAddressLine>
+            <city>Portland</city>
+            <state>OR</state>
+            <postalCode>99123</postalCode>
+            <country>US</country>
+         </addr>
+         <telecom use="WP" value="tel:555-555-1002"/>
+         <assignedPerson>
+            <name>
+               <given>Henry</given>
+               <family>Seven</family>
+            </name>
+         </assignedPerson>
+      </assignedEntity>
+   </dataEnterer>
+   <informant>
+      <assignedEntity>
+         <id extension="KP00017" root="2.16.840.1.113883.19.5"/>
+         <addr>
+            <streetAddressLine>1001 Village Avenue</streetAddressLine>
+            <city>Portland</city>
+            <state>OR</state>
+            <postalCode>99123</postalCode>
+            <country>US</country>
+         </addr>
+         <telecom use="WP" value="tel:555-555-1002"/>
+         <assignedPerson>
+            <name>
+               <given>Henry</given>
+               <family>Seven</family>
+            </name>
+         </assignedPerson>
+      </assignedEntity>
+   </informant>
+   <informant>
+      <relatedEntity classCode="PRS">
+         <!-- classCode PRS represents a person with personal relationship with the patient. -->
+         <code code="SPS" codeSystem="2.16.840.1.113883.1.11.19563" codeSystemName="Personal Relationship Role Type Value Set" displayName="SPOUSE"/>
+         <relatedPerson>
+            <name>
+               <given>Frank</given>
+               <family>Jones</family>
+            </name>
+         </relatedPerson>
+      </relatedEntity>
+   </informant>
+   <custodian>
+      <assignedCustodian>
+         <representedCustodianOrganization>
+            <id extension="99999999" root="2.16.840.1.113883.4.6"/>
+            <name>Community Health and Hospitals</name>
+            <telecom use="WP" value="tel: 555-555-1002"/>
+            <addr use="WP">
+               <streetAddressLine>1002 Healthcare Drive </streetAddressLine>
+               <city>Portland</city>
+               <state>OR</state>
+               <postalCode>99123</postalCode>
+               <country>US</country>
+            </addr>
+         </representedCustodianOrganization>
+      </assignedCustodian>
+   </custodian>
+   <informationRecipient>
+      <intendedRecipient>
+         <informationRecipient>
+            <name>
+               <given>Henry</given>
+               <family>Seven</family>
+            </name>
+         </informationRecipient>
+         <receivedOrganization>
+            <name>Community Health and Hospitals</name>
+         </receivedOrganization>
+      </intendedRecipient>
+   </informationRecipient>
+   <legalAuthenticator>
+      <time value="20090227130000+0500"/>
+      <signatureCode code="S"/>
+      <assignedEntity>
+         <id extension="999999999" root="2.16.840.1.113883.4.6"/>
+         <addr>
+            <streetAddressLine>1001 Village Avenue</streetAddressLine>
+            <city>Portland</city>
+            <state>OR</state>
+            <postalCode>99123</postalCode>
+            <country>US</country>
+         </addr>
+         <telecom use="WP" value="tel:555-555-1002"/>
+         <assignedPerson>
+            <name>
+               <given>Henry</given>
+               <family>Seven</family>
+            </name>
+         </assignedPerson>
+      </assignedEntity>
+   </legalAuthenticator>
+   <authenticator>
+      <time value="20090227130000+0500"/>
+      <signatureCode code="S"/>
+      <assignedEntity>
+         <id extension="999999999" root="2.16.840.1.113883.4.6"/>
+         <addr>
+            <streetAddressLine>1001 Village Avenue</streetAddressLine>
+            <city>Portland</city>
+            <state>OR</state>
+            <postalCode>99123</postalCode>
+            <country>US</country>
+         </addr>
+         <telecom use="WP" value="tel:555-555-1002"/>
+         <assignedPerson>
+            <name>
+               <given>Henry</given>
+               <family>Seven</family>
+            </name>
+         </assignedPerson>
+      </assignedEntity>
+   </authenticator>
+
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <title>Section with graphic</title>
+               <text><renderMultiMedia referencedObject="image1"/></text>
+               <entry>
+                  <observationMedia ID="image1" classCode="OBS" moodCode="EVN">
+                     <value mediaType="image/gif" representation="B64">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</value>
+                  </observationMedia>
+               </entry>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+
+</ClinicalDocument>
